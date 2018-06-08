@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
+// import createHistory from "history/createHashHistory"; // 锚点模式的history
 import PT from 'prop-types'
 import Loadable from 'react-loadable' // 用于代码分割时动态加载模块
 
@@ -18,6 +19,8 @@ const Home = Loadable({
     loading: Loading,
     timeout: 10000,
 })
+
+// const history = createHistory()
 
 class RootContainer extends React.Component {
     static propTypes = {

@@ -1,0 +1,17 @@
+.zent-menu-item {
+    padding-left: 0 !important;
+    > a {
+        display: block;
+        padding-left: 48px;
+        color: #666;
+        &:hover {
+            color: #27f;
+        }
+    }
+}
+
+.zent-menu__inline-item-selected {
+    > a {
+        color: #27f;
+    }
+}

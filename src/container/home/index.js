@@ -1,14 +1,13 @@
-import React from 'react';
-import { MyMenu } from '../../component/home'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
 
-class Home extends React.Component {
-    render() {
-        return (
-            <div>
-                <MyMenu></MyMenu>
-            </div>
-        )
-    }
-}
+import Home from '../../component/home'
 
-export default Home
+const home = connect(
+    state => ({}),
+    dispatch => ({
+        active: bindActionCreators({}, dispatch)
+    })
+)(Home)
+
+export default home

@@ -163,7 +163,7 @@ module.exports = {
               {
                 loader: require.resolve('css-loader'),
                 options: {
-                  importLoaders: 1
+                  importLoaders: 1,
                 },
               },
               {
@@ -196,8 +196,7 @@ module.exports = {
               {
                 loader: "css-loader",
                 options: {
-                  modules: true,
-                  localIdentName: "[local]_[hash:base64:5]"
+                  importLoaders: 1,
                 }
               },
               "postcss-loader",
